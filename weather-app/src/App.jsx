@@ -1,22 +1,21 @@
 import './App.css'
-import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar } from './components/Navbar';
-import { WeatherCard } from './components/WeatherCard';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import { WeatherContainer } from './Pages/WeatherContainer';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Home } from './Pages/Home';
 
 
 function App() {
 
   return (
-    <>
-    <Navbar/>
-     <WeatherCard/>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/:city" element={<WeatherContainer/>} />
+      </Routes>
+    </Router>
   )
 }
 
 export default App
 
-//9ccdd6027205f23aea6a07d36c703336
-// https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
