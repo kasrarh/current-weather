@@ -1,7 +1,7 @@
 export const Error = () => {
     return(
         <>
-            <div className="row d-flex justify-content-center py-5">
+            <div className="row d-flex justify-content-center py-5 p-3">
                 <div className="col-md-8 col-lg-6 col-xl-5">
                     <div className="card text-body" style={{ borderRadius: '35px' }}>
                         <div className="card-body p-4">

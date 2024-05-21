@@ -1,0 +1,8 @@
+.navbar-brand.aligned {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand.aligned img {
+    margin-right: 5px;
+  }
