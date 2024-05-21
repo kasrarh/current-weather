@@ -33,7 +33,9 @@ export const WeatherCard = () => {
                 setLoading(false);
             });
     }, [city]);
+    
     const setWeather = (res) => {
+        //Setting the fetched data for weatherData object.
         setWeatherData({
             tempreture: parseInt(res.main.temp),
             icon: `https://openweathermap.org/img/wn/${res?.weather[0].icon}@2x.png`,
